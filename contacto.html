@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Barbería El Maestro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">✂ BARBER SHOP</div>
+        <div class="hamburger">☰</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Quiénes Somos</a></li>
+                <li><a href="galeria.html">Biblioteca/Modelos</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <section class="contacto">
+    <h2 class="section-title">Contacto</h2>
+
+    <div class="contacto-container">
+
+        <!-- FORMULARIO -->
+        <div class="contacto-form">
+            <h3>Escribinos</h3>
+            <form action="https://formsubmit.co/tubarbearia@gmail.com" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+
+                <!-- Opcional -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="gracias.html">
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+        <!-- DATOS -->
+        <div class="contacto-info">
+            <h3>Datos de la Barbería</h3>
+            <p>📧 <strong>Email:</strong><br>tubarbearia@gmail.com</p>
+            <p>📱 <strong>WhatsApp:</strong><br>
+                <a href="https://wa.me/5491112345678" target="_blank">11 1234 5678</a>
+            </p>
+
+            <a class="btn-wsp" href="https://wa.me/5491112345678" target="_blank">
+                💬 Hablar por WhatsApp
+            </a>
+        </div>
+
+    </div>
+
+    <!-- MAPA -->
+    <div class="mapa">
+        <iframe 
+            src="https://www.google.com/maps?q=Av.%20Corrientes%201234&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+
+    <footer><p>&copy; 2025 Barbería El Maestro</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
